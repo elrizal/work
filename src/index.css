@@ -3,3 +3,6 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+.MuiAppBar-colorPrimary-10 {
+  background-color: #292d45 !important ;
+}

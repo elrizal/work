@@ -1,6 +1,10 @@
 const webpack = require('webpack');
+const path = require('path');
+
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const port = process.env.PORT || 3000;
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 module.exports = {
   mode: 'development',
   entry: {
@@ -8,13 +12,15 @@ module.exports = {
     app: './src/index.js'
   },
   output: {
-    filename: '[name].[hash].js'
+    filename: '[name].[hash].js',
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/'
   },
-  devtool: 'inline-source-map',
-  module: {
+  devtool: 'source-map',
+    module: {
     rules: [
       {
-        test: /\.(js)$/,
+        test: /\.(js)$/, test: /\.(png|jpg)$/,
         exclude: /node_modules/,
         use: ['babel-loader']
       },
@@ -28,8 +34,25 @@ module.exports = {
             loader: 'css-loader',
             options: {
               modules: true,
+              importLoaders: 1,
               camelCase: true,
               sourceMap: true
+            }
+          },
+          {
+            // PostCSS will run before css-loader and will 
+            // minify and autoprefix our CSS rules. We are also
+            // telling it to only use the last 2 
+            // versions of the browsers when autoprefixing
+            loader: 'postcss-loader',
+            options: {
+              config: {
+                ctx: {
+                  autoprefixer: {
+                    browsers: 'last 2 versions'
+                  }
+                }
+              }
             }
           }
         ]
@@ -53,6 +76,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'public/index.html',
       favicon: 'public/favicon.ico'
+    }),
+    new ExtractTextPlugin({
+      filename: 'styles/styles.[hash].css',
+      allChunks: true
     })
   ],
   devServer: {
