@@ -1,8 +1,63 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Fira Sans', sans-serif;
+  /* color: #616579; */
+  letter-spacing: .14px;
+  color: rgba(31,37,38,.75);
+  font-weight: 300 !important;
+  font-style: normal;
+}
+h1, h2, h3 {
+  color: #2a2e43;
+  line-height: 2px;
+}
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.5em;
+}
+#nav {
+  position: fixed;
 }
 .MuiAppBar-colorPrimary-10 {
   background-color: #292d45 !important ;
+}
+#logo {
+  max-height: 60px;
+  padding: 4px;
+  justify-content: center;
+  margin-top: 5px;
+}
+#section1 {
+  height: 98vh;
+}
+#section2 {
+  height: 90vh;
+  background-color: lightblue;
+}
+#footer{
+  background-color:#2a2e43;
+  padding: 10px;
+   color: #7689aa;
+}
+Row {
+  padding-bottom: 20px;
+}
+#icons {
+  padding: 5px;
+  margin: 0 auto;
+  align-items: center;
+}
+#header-icons {
+  border-color: #292d45;
+  -moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+#prev {
+  max-width: 98%;
+}
+.SingleLineGridList-root-92 {
+  background-color: transparent;
 }

@@ -41,14 +41,12 @@ const AsyncNoMatch = importedComponent(
 
 // export default App;
 
-
 const App = () => {
   return (
     <Router>
       <div>
         <div id='block' style={{'height':'50px'}}></div>
       <Navigation />
-    
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/dynamic" component={AsyncDynamicPAge} />
@@ -60,5 +58,4 @@ const App = () => {
     </Router>
   );
 };
-
 export default App;

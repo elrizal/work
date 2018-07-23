@@ -7,3 +7,17 @@
     margin-top: 10px !important;
     margin-bottom: 20px !important;
   }
+  li {
+    text-decoration: none;
+    list-style: none;
+  }
+
+  a {
+    color: 
+    #aed6e7;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  a:hover{
+    color: white;
+  }
