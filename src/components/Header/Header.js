@@ -34,7 +34,7 @@ function Header(props) {
     <Row>
     <Col  xs={4}  sm={4} md={6} lg={6} >
       <div align="left" >
-      <h1 id="header" className="animated fadeIn delay-20s" >ERIN
+      <h1 id="header" className="animated fadeIn delay-20s">ERIN
       LEIGH
       RIZAL</h1>
       {/* <Button variant="contained" color="secondary" className={classes.button}>

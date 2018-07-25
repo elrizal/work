@@ -4,13 +4,21 @@ import './App.css';
 import MenuExampleBasic from './components/Navigation/Navigation';
 import Home from './Home';
 import DynamicPage from './DynamicPage';
+import DevPage from './DevPage';
 import NoMatch from './NoMatch';
 import Loading from './components/Loading';
 import importedComponent from 'react-imported-component';
 import Navigation from './components/Navigation/Navigation';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const AsyncDynamicPAge = importedComponent(
-  () => import(/* webpackChunkName:'DynamicPage' */ './DynamicPage'),
+  () => import(/* webpackChunkName:'DynamicPage' */ './DynamicPage'),('./DevPage'),
+  {
+    LoadingComponent: Loading
+  }
+);
+const AsyncDynamicG = importedComponent(
+  () => import('./DevPage'),
   {
     LoadingComponent: Loading
   }
@@ -33,12 +41,11 @@ const AsyncNoMatch = importedComponent(
 //           <h1 className="App-title">Welcome to React</h1>
 //         </header>
 //         <p className="App-intro">
-// kkjlknlknkl        </p>
+//     </p>
 //       </div>
 //     );
 //   }
 // }
-
 // export default App;
 
 const App = () => {
@@ -50,12 +57,15 @@ const App = () => {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/dynamic" component={AsyncDynamicPAge} />
+          <Route exact path="/dev" component={AsyncDynamicG} />
           <Route component={AsyncNoMatch} />
           <Route exact path="/dynamic" component={DynamicPage} />
+          <Route exact path="/dev" component={DevPage} />
           <Route component={NoMatch} />
         </Switch>
       </div>
     </Router>
   );
 };
+
 export default App;

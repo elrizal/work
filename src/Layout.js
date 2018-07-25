@@ -13,17 +13,18 @@ const Layout = ({ children }) => {
       <Divider />
       <div className={pullRight} id='footer' align='center'>
       <Container>
-      <Row>
-      <Col  xs={12} sm={12}  md={6} lg={6} align='left'>
-      <ul>Portfolio copyright © Erin Rizal 2018 </ul>
+      <Row className='footer'>
+      <Col  xs={12} sm={6}  md={6} lg={6} align='left'>
+      <ul>© Erin Rizal 2018 </ul>
       </Col>
-      <Col  xs={12} sm={12}  md={6} lg={6} >
+      <Col  xs={12} sm={6}  md={6} lg={6} align='center'>
       <a href='mailto:erin@lrizal.com'><i id='icons' className='fas fa-envelope fa-2x'></i>  </a> 
       <a href='https://www.linkedin.com/in/erin-leigh-rizal-3ab50767/' target='_blank' rel="noopener noreferrer">  <i id='icons' className='fab fa-linkedin fa-2x'></i> </a>    
       <a href='https://www.github.com/elrizal' target='_blank' rel="noopener noreferrer" > <i id='icons' className='fab fa-github  fa-2x'></i></a>
       </Col>
       </Row>    
-      </ Container>        
+      </ Container> 
+      <div id='block' style={{'height':'10%'}}></div>       
       </div>
 </div>
   );

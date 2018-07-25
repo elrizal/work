@@ -13,11 +13,18 @@
   }
 
   a {
-    color: 
-    #aed6e7;
+    color: #aed6e7;
     text-decoration: none;
     transition: 0.3s;
   }
   a:hover{
-    color: white;
+    color: #a0bbc9;
+  }
+.footer {
+    display: block;
+    margin-top: var( — space);
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    color: #b6d5e5;
   }
