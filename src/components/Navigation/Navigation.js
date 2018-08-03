@@ -29,14 +29,13 @@ function ButtonAppBar(props) {
     <div className={classes.root}>
       <AppBar position="fixed">
         <Toolbar>
-
           <div align='left'>
           <img id='logo' src={require('/Users/erinrizal/Documents/work/src/images/logo.png')} />
           </div>
           <Typography variant="title" color="inherit" className={classes.flex}>
           </Typography>
           <div className='work-items'>
-          <Link to="/">  main </Link>  | UX | <Link to="/dev">  Web Development </Link>  | Design | 
+          <Link to="/">  main </Link>  | <Link to="/uxui"> UX & UI Design </Link>  | <Link to="/dev">  Web Development </Link>  | Design | 
           </div>
           {/* <IconButton className={classes.menuButton} color="inherit" aria-label="Menu" align='right'>
           <MenuIcon />

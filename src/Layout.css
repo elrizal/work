@@ -11,20 +11,20 @@
     text-decoration: none;
     list-style: none;
   }
-
-  a {
-    color: #aed6e7;
+  a, .MuiButton-textPrimary-533 {
+    color: #76abc2 !important;
     text-decoration: none;
     transition: 0.3s;
   }
   a:hover{
-    color: #a0bbc9;
+    color: #7689aa;
+  }
+  a:visited{
+    color: #76abc2;
   }
 .footer {
-    display: block;
-    margin-top: var( — space);
+    /* margin-top: var( — space); */
     display: flex;
-    margin: 10px;
-    padding: 10px;
+    padding-bottom: 15px;
     color: #b6d5e5;
   }

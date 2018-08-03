@@ -16,7 +16,6 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 1.5em;
-  line-height: 2px;
 }
 #nav {
   position: fixed;
@@ -39,7 +38,7 @@ h2 {
   width: 100%;
 }
 Row {
-  padding-bottom: 20px;
+  padding: 10px;
 }
 #icons {
   padding: 5px;
@@ -64,17 +63,19 @@ Row {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: .9em;
-
 }
 #galimg {
-  width: 100%;
+  width: 90%;
+  height: auto;
+  padding-top: 8px;
+  margin: 5 auto;
+  justify-content: center;
+  align-content: center;
+  display: block;
 }
 @media only screen and (min-width: 400px) and (max-width: 600px){
-  #prev {
+  #prev, #galimg {
     max-width: 40%;
-  }
-  #galimg {
-    width: 80%;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 399px) {
@@ -82,6 +83,9 @@ Row {
     max-width: 30%;
   }
   #galimg {
-    width: 100%;
+    min-height: 50%;
+  }
+  .viewitem {
+    max-width: 70vw;
   }
 }
