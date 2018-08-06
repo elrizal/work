@@ -7,6 +7,7 @@ import Home from './Home';
 import DynamicPage from './DynamicPage';
 import DevPage from './DevPage';
 import UXpage from './UXpage';
+import DigitalDesign from './DigitalDesign';
 import NoMatch from './NoMatch';
 import Loading from './components/Loading';
 import importedComponent from 'react-imported-component';
@@ -31,30 +32,18 @@ const AsyncDynamicU = importedComponent(
     LoadingComponent: Loading
   }
 );
+const AsyncDynamicD = importedComponent(
+  () => import('./DigitalDesign'),
+  {
+    LoadingComponent: Loading
+  }
+);
 const AsyncNoMatch = importedComponent(
   () => import(/* webpackChunkName:'NoMatch' */ './NoMatch'),
   {
     LoadingComponent: Loading
   }
 );
-// class App extends Component {
-//   render() {
-//     return (
-
-//       <div className="App">
-   
-//         <header className="App-header">
-// <MenuExampleBasic />
-//           <img src={logo} className="App-logo" alt="logo" />
-//           <h1 className="App-title">Welcome to React</h1>
-//         </header>
-//         <p className="App-intro">
-//     </p>
-//       </div>
-//     );
-//   }
-// }
-// export default App;
 
 const App = () => {
   return (
@@ -67,10 +56,12 @@ const App = () => {
           <Route exact path="/dynamic" component={AsyncDynamicPAge} />
           <Route exact path="/dev" component={AsyncDynamicG} />
           <Route exact path="/uxui" component={AsyncDynamicU} />
+          <Route exact path="/digitaldesign" component={AsyncDynamicD} />
           <Route component={AsyncNoMatch} />
           <Route exact path="/dynamic" component={DynamicPage} />
           <Route exact path="/dev" component={DevPage} />
           <Route exact path="/uxui" component={UXpage} />
+          <Route exact path="/digitaldesign" component={DigitalDesign} />
           <Route component={NoMatch} />
         </Switch>
       </div>

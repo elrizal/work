@@ -7,10 +7,12 @@ import './Layout.css';
 const Layout = ({ children }) => {
   return (
     <div>
+      <div style={{'height':'20px'}}></div>
       {children}
+      <div style={{'height':'20px'}}></div>
       <Link to="/">
       </Link>
-      <div style={{'height':'50px'}}></div>
+     
       <Divider />
       <div className={pullRight} id='footer' align='center'>
       <Container>
