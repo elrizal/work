@@ -35,7 +35,7 @@ function ButtonAppBar(props) {
           <Typography variant="title" color="inherit" className={classes.flex}>
           </Typography>
           <div className='work-items'>
-          <Link to="/">  main </Link>  | <Link to="/uxui"> UX & UI Design </Link>  | <Link to="/dev">  Web Development </Link>  | Design | 
+          <Link to="/">  main </Link>   <Link to="/uxui"> UX & UI Design </Link>   <Link to="/dev">  Web Development </Link>  <Link to="/branddesign">  Branding </Link>
           </div>
           {/* <IconButton className={classes.menuButton} color="inherit" aria-label="Menu" align='right'>
           <MenuIcon />

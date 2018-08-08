@@ -50,7 +50,7 @@ import Button from '@material-ui/core/Button';
               wisdom.
             </p>
           <p><strong>Built with:</strong> MySQL, Sequelize, Axios, Passport, React and style plugins</p>
-          <Button variant="outlined" color="primary" a href="https://peaceful-woodland-77310.heroku.com" target='_blank' rel="noopener noreferrer"> Website</Button> <Button variant="outlined" color="primary" a href="https://github.com/elrizal/CookWithNana" target='_blank' rel="noopener noreferrer">GitHub</Button>
+          <Button variant="outlined" color="primary" a href="https://peaceful-woodland-77310.herokuapp.com/" target='_blank' rel="noopener noreferrer"> Website</Button> <Button variant="outlined" color="primary" a href="https://github.com/elrizal/CookWithNana" target='_blank' rel="noopener noreferrer">GitHub</Button>
         </Col>
         <Col  xs={12} sm={12}  md={6} lg={4}>
          <img id='galimg' src={require('./images/preview/movr.jpg')} alt='movr' />

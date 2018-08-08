@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { Switch, BrowserRouter as Router, Route } from 'react-router-dom';
-import './App.css';
-import './index.css';
+import './css/App.css';
+import './css/index.css';
 import MenuExampleBasic from './components/Navigation/Navigation';
 import Home from './Home';
 import DynamicPage from './DynamicPage';
 import DevPage from './DevPage';
 import UXpage from './UXpage';
-import DigitalDesign from './DigitalDesign';
+import BrandDesign from './BrandDesign';
 import NoMatch from './NoMatch';
 import Loading from './components/Loading';
 import importedComponent from 'react-imported-component';
@@ -33,7 +33,7 @@ const AsyncDynamicU = importedComponent(
   }
 );
 const AsyncDynamicD = importedComponent(
-  () => import('./DigitalDesign'),
+  () => import('./BrandDesign'),
   {
     LoadingComponent: Loading
   }
@@ -56,12 +56,12 @@ const App = () => {
           <Route exact path="/dynamic" component={AsyncDynamicPAge} />
           <Route exact path="/dev" component={AsyncDynamicG} />
           <Route exact path="/uxui" component={AsyncDynamicU} />
-          <Route exact path="/digitaldesign" component={AsyncDynamicD} />
+          <Route exact path="/branddesign" component={AsyncDynamicD} />
           <Route component={AsyncNoMatch} />
           <Route exact path="/dynamic" component={DynamicPage} />
           <Route exact path="/dev" component={DevPage} />
           <Route exact path="/uxui" component={UXpage} />
-          <Route exact path="/digitaldesign" component={DigitalDesign} />
+          <Route exact path="/branddesign" component={BrandDesign} />
           <Route component={NoMatch} />
         </Switch>
       </div>

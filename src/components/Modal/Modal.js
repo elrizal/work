@@ -52,7 +52,6 @@ class SimpleModal extends React.Component {
       const { classes } = this.props;
     return (
       <div>
-        <Button onClick={this.handleOpen}>Open Modal</Button>
         <img id='galimg' src={tile.src} alt={tile.title} />
         <Modal
           aria-labelledby="simple-modal-title"
