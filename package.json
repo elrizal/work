@@ -32,6 +32,7 @@
     "yarn": "^1.9.4"
   },
   "scripts": {
+    "start": "node server.js",
     "dev": "webpack-dev-server --config webpack.config.development.js",
     "prebuild": "rimraf dist",
     "build": "cross-env NODE_ENV=production webpack -p --config webpack.config.production.js"
