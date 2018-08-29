@@ -1,9 +1,12 @@
 const webpack = require('webpack');
 const path = require('path');
-
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const port = process.env.PORT || 3000;
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+new webpack.DefinePlugin({
+  'process.env.NODE_ENV': JSON.stringify('production')
+}),
+new webpack.optimize.UglifyJsPlugin()
 
 module.exports = {
   mode: 'development',
