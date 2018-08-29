@@ -14,6 +14,7 @@ const photos = [
   { src: require('./images/items/its-lit-logo.png'), width: 1, height: 1 },
   { src: require('./images/items/beer-logo.png'), width: 1, height: 1 },
   { src: require('./images/items/cwn-logo.png'), width: 1, height: 1 },
+  { src: require('./images/items/showcase-rh.jpg'), width: 1, height: 1 },
   { src: require('./images/items/showcase-udl.jpg'), width: 1, height: 1 },
   { src: require('./images/items/showcase-opensys.jpg'), width: 1, height: 1 },
   { src: require('./images/items/showcase-mprop.jpg'), width: 1, height: 1 },

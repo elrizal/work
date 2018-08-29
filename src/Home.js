@@ -70,10 +70,8 @@ const Home = () => {
         </Row>
         <ScrollAnimation animateIn="fadeIn">
         <div align='center' id='introgridc'>
-
         <a className='introgrid' href="/uxui">
         <img className='introgrid' src={require('./images/items/ux.jpg')} /> </a>
-
         <a className='introgrid' href="/branddesign">
         <img className='introgrid' src={require('./images/items/branding.jpg')} /> </a>
         <a className='introgrid' href="/dev">

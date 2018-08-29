@@ -111,7 +111,7 @@ const WFCase = (props) => {
         </Col>
         <Col xs={12} sm={12}  md={6} lg={4}>
           <h2>3- Empathy & Personas</h2>
-          <p>Based on what was learned about my particpants, I created "personas" or fictional people to represent their experiences. Each represented the audiences for the 
+          <p>Based on what was learned about my participants, I created "personas" or fictional people to represent their experiences. Each represented the audiences for the 
               new features I planned to create for the site: a more refined search, talking to a local and building a travel group
           </p>
         <Button variant="contained" color="primary" a href="https://www.slideshare.net/ErinLeighRizal" target='_blank' rel="noopener noreferrer">View Case</Button> 
@@ -125,7 +125,7 @@ const WFCase = (props) => {
         </ScrollAnimation>
         </Parallax>
     
-      <Parallax bgImage={require('./images/uxui/citybg.jpg')} strength={100}>
+      <Parallax bgImage={require('./images/uxui/mountains/citybg.jpg')} strength={100}>
          <Container>
       <ScrollAnimation animateIn="fadeInLeft">
       <h1 align='center'>Refine & Tune:</h1>
@@ -157,7 +157,6 @@ const WFCase = (props) => {
         </ScrollAnimation>
         </Container>
         <img id='lake' className="img2 animated slideInUp" src={require('./images/uxui/mountains/mountain-mid.png')} /> 
-       
         <ScrollAnimation animateIn="slideInUp">    
         <img id='lake' className='img1' src={require('./images/uxui/mountains/city-line.png')} />
         </ScrollAnimation>  
@@ -166,13 +165,13 @@ const WFCase = (props) => {
         <Container>
         <h1 align='center' style={{'color':'white'}}>Branding</h1>
         <div className='custom-hr'></div>
-
         <Row>
         <p>For the re-brand of the site, I decided to riff off of its original motifs. 
           As the proposed design focuses on UI that is less focused on the photography of places (reserved moreso for
           the items and components themselves), I decided to go with a more material-centered approach to the buttons 
           and visual guides of the app.</p>
-        </Row> <br></br>
+        </Row> 
+        <br></br>
         <ScrollAnimation animateIn="fadeIn">  
         <WfGallery />
         </ScrollAnimation>

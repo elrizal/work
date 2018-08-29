@@ -20,8 +20,7 @@ const Hamburger = props => {
             <a id="illustration" className="menu-item" href="/illustration"> Illustrations  </a>  
             <hr className='hr-nav'></hr>
             <a href='https://www.linkedin.com/in/erin-leigh-rizal-3ab50767/' target='_blank' rel="noopener noreferrer">  <i id='icons' className='fab fa-linkedin fa-lg'></i> LinkedIn</a>    
-      <a href='https://www.github.com/elrizal' target='_blank' rel="noopener noreferrer" > <i id='icons' className='fab fa-github  fa-lg'></i> Github</a>
-   
+            <a href='https://www.github.com/elrizal' target='_blank' rel="noopener noreferrer" > <i id='icons' className='fab fa-github  fa-lg'></i> Github</a>
            </nav>
      </div>
     </div>
