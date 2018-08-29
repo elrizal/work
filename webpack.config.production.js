@@ -1,13 +1,12 @@
 const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const port = process.env.PORT || 3000;
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 new webpack.DefinePlugin({
   'process.env.NODE_ENV': JSON.stringify('production')
 }),
-new webpack.optimize.UglifyJsPlugin()
+new config.optimization.minimize()
 
 module.exports = {
   mode: 'development',
@@ -16,7 +15,7 @@ module.exports = {
     app: './src/index.js'
   },
   output: {
-    filename: '[name].[hash].js',
+    filename: 'static/[name].[hash].js',
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/'
   },
@@ -86,11 +85,4 @@ module.exports = {
       allChunks: true
     })
   ],
-  devServer: {
-    host: 'localhost',
-    port: port,
-    historyApiFallback: true,
-    open: true,
-    hot: true
-  }
 };
