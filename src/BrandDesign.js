@@ -4,10 +4,6 @@ import Layout from './Layout';
 import { Row, Col } from 'react-bootstrap';
 import {Paper, Button, Grid} from '@material-ui/core/';
 import { Container} from 'semantic-ui-react';
-import { withStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
-import Modal from '@material-ui/core/Modal';
-// import BrandGallery from './components/Gallery/Gallery';
 import Gallery from 'react-photo-gallery';
 import Lightbox from 'react-images';
 
@@ -21,8 +17,10 @@ const photos = [
   { src: require('./images/items/showcase-udl.jpg'), width: 1, height: 1 },
   { src: require('./images/items/showcase-opensys.jpg'), width: 1, height: 1 },
   { src: require('./images/items/showcase-mprop.jpg'), width: 1, height: 1 },
+  { src: require('./images/items/mycroft.png'), width: 1, height: 1 },
+  { src: require('./images/items/dresjay-logos.png'),  width: 1, height: 1 },
   { src: require('./images/items/showcase-sheas.jpg'), width: 1, height: 1 },
-  { src: require('./images/items/sheabranding.jpg'),  width: 1, height: 1 }
+  { src: require('./images/items/sheabranding.jpg'),  width: 1, height: 1 },
 ];
 
 class BrandGallery extends React.Component {
@@ -59,7 +57,8 @@ class BrandGallery extends React.Component {
   render() {
     return (
       <div>
-        <Gallery  photos={photos} onClick={this.openLightbox} />
+        <Gallery Col={6
+        } photos={photos} onClick={this.openLightbox} />
 	    	<Lightbox images={photos}
           onClose={this.closeLightbox}
           onClickPrev={this.gotoPrevious}
@@ -71,18 +70,19 @@ class BrandGallery extends React.Component {
     )
   }
 }
+
 const  classes  = this.props;
 const BrandDesign = () => {
   return (
     <Layout>
-      <Container> 
-      <div style={{'height':'30px'}}></div>
+      <div style={{'height':'35px'}}></div>
       <div align='center' className="animated fadeInLeft delay-20s">
-      <h2>Brand Design</h2>
-      <p>Case studies on re-brands and creative directions for new organizations.</p>
+      <h2>Logo and Brand Design</h2>
+      A brief overview on re-brands and creative directions for new organizations.
       </div>
-      <div align='center' className="animated fadeIn delay-50s">
-      <BrandGallery />
+      <Container>
+      <div align='center'>
+      <BrandGallery />  
       </div>
       </Container>
       </Layout>

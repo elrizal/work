@@ -22,14 +22,15 @@ module.exports = {
         test: /\.css$/,
         use: [
           {
-            loader: "style!css!less",
+            loader: "style-loader",
           },
           {
-            loader: 'css-loader',
+            loader: 'less-loader',
             options: {
               modules: true,
               camelCase: true,
-              sourceMap: true
+              sourceMap: true,
+              localIdentName: "[local]___[hash:base64:5]"
             }
           }
         ]

@@ -1,12 +1,8 @@
 import React from 'react';
-// import { render } from 'react-dom';
 import { Parallax, Background } from 'react-parallax';
 import './header.css';
 import PropTypes from 'prop-types';
-// import Button from '@material-ui/core/Button';
 import { withStyles } from '@material-ui/core/styles';
-// import ArrowDownward from '@material-ui/icons/ArrowDownward';
-// import Icon from '@material-ui/core/Icon';
 import { Row, Col} from 'react-bootstrap';
 
 const styles = theme => ({
@@ -29,22 +25,19 @@ function Header(props) {
   <div >
     <Parallax
      id='parallax'
-      bgImage={require('/Users/erinrizal/Documents/work/src/images/headernew.png')}
-      strength={200}>
+     className='headermarble animated fadeIn'
+      bgImage={require('../../images/6.jpg')}
+      strength={100}>
     <Row>
     <Col  xs={4}  sm={4} md={6} lg={6} >
       <div align="left" >
-      <h1 id="header" className="animated fadeIn delay-20s">ERIN
-      LEIGH
-      RIZAL</h1>
-      {/* <Button variant="contained" color="secondary" className={classes.button}>
-      SKIP TO WORK SAMPLES
-      <ArrowDownward className={classes.rightIcon} />
-      </Button> */}
+      <div id="header" >ERIN<br></br>
+      LEIGH<br></br>
+      RIZAL</div>
         </div>
       </Col>
       <Col  xs={8} sm={8}  md={6} lg={6} ><div>
-      <img className="animated fadeIn delay-50s" id='profile' src={require('/Users/erinrizal/Documents/work/src/images/mer.png')} />
+      <img id='profile' className="animated fadeIn" src={require('../../images/mer.png')} />
       </div>
       </Col>
     </Row>

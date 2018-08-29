@@ -3,43 +3,40 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
+import { Container} from 'semantic-ui-react';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
-import { ScrollAnimation } from 'react-animate-on-scroll';
 import {Link} from 'react-router-dom';
+import { Dropdown } from 'semantic-ui-react'
+import '../../css/index.css';
+import Hamburger from '../Hamburger/Hamburger';
 
 const styles = {
   root: {
-    flexGrow: 2,
+    flexGrow: 1,
   },
   flex: {
-    flex: 2,
+    flex: 1,
   },
   menuButton: {
     marginLeft: -12,
     marginRight: 20,
   },
 };
-
 function ButtonAppBar(props) {
   const { classes } = props;
   return (
-    <div className={classes.root}>
-      <AppBar position="fixed">
+    <div className={classes.root}  id="navContainer">
+      <AppBar position="fixed" className='animate fadeInDown'>
+      <Hamburger />
         <Toolbar>
-          <div align='left'>
-          <img id='logo' src={require('/Users/erinrizal/Documents/work/src/images/logo.png')} />
+          <div align='left'><Link to="/"> 
+          <img id='logo' src={require('../../images/logo.png')} /></Link> 
           </div>
-          <Typography variant="title" color="inherit" className={classes.flex}>
-          </Typography>
+          <Container align='right'>
           <div className='work-items'>
-          <Link to="/">  main </Link>   <Link to="/uxui"> UX & UI Design </Link>   <Link to="/dev">  Web Development </Link>  <Link to="/branddesign">  Branding </Link>
           </div>
-          {/* <IconButton className={classes.menuButton} color="inherit" aria-label="Menu" align='right'>
-          <MenuIcon />
-          </IconButton> */}
+          </Container>
         </Toolbar>
       </AppBar>
     </div >

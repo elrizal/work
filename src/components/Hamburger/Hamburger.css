@@ -1,0 +1,133 @@
+.navbar .navbar-expand-lg .navbar-light .bg-light {
+    /* position: fixed; */
+}
+.bg-light {
+    height: 90px;
+    box-shadow: 0 0 8px 1px #8080808f;
+    top: 0;
+}
+#navContainer {
+    position: fixed;
+    z-index: 5;
+    width: 100vw;
+}
+/* Position and sizing of burger button */
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    right: 36px;
+    top: 18px;
+  }
+  .bm-burger-bars {
+    background-color: #b6d5e5;
+  }
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+  hr{
+    color: white;
+  }
+  .bm-menu {
+    background-color:  #292d45;;
+    font-size: 1.15em;
+    text-transform: uppercase;
+    box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.247);
+  }
+  .btn {
+    color: #946288;
+    background-image: none;
+    border-color: #946288;
+  }
+  .btn a hover{
+    color: white
+  }
+.nav {
+    width: 100%;
+  } 
+  .nav ul,
+  .nav li {
+    width: 100%;
+    margin:0 0;
+    padding: 20px;;
+    list-style:none;
+    line-height: 30px; 
+  }
+  .form-control-hamburger{
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ffffff;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+  .nav ul {
+    height:30px;
+    padding:4px 0 0;
+  }
+  hr {
+    width: 100%;
+  }
+  .nav li {
+    float: left;
+    display:inline;
+    padding:5px 10px;
+    /* the tiny border */
+    border-left:1px solid #ccc;
+    border-right:1px solid white;
+  }
+  .nav li:first-child {border-left:none}
+  .nav li:last-child {border-right:none}
+  .nav a {
+    display:block;
+    line-height:40px;
+    height:40px;
+    padding:0 35px 10px;
+    color:white;
+    letter-spacing: 3px;
+    text-decoration:none;
+    border-radius:5px/25px;
+    opacity:0.5;
+  }
+  .btn-primary {
+    color: rgb(253, 192, 238);
+		border-color: #ffffff;
+}
+.btn-primary {
+		color: #fff;
+		border-width: 2px;
+
+		border-color: #ffffff;
+}
+  /* the hover effect */
+  .nav a:hover {
+    background-color:#161829;
+    opacity: 0;
+    color:white;
+    width: 100%;
+    opacity:1;
+    /* transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out; */
+ }
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #b38ed1; 
+  }
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #ffffff;
+    padding: 0.8em; 
+  }
+
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.74);
+  }

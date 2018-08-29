@@ -1,58 +1,63 @@
-
  #header {
   margin-top: 12vh;
 	 font-size: 9em; 
 	color: #2a2e43;
 	margin-left: 40%;
   font-weight: 900;
+  font-family: 'Biryani', sans-serif;
   height: 100%;
   display: flex;
   flex-direction: column;
- }
- h1 {
-   line-height: 1em !important;
+  line-height: 1em !important;
   z-index: -10;
-  font-weight: 700 !important;
+  font-weight: 900 !important;
  }
-
 #profile {
   padding: 0%;
+  margin-left: -10%;
   margin-bottom: 0px !important;
- max-height: 80%;
   display: flex;
   flex-direction: column;
-
+}
+.headermarble {
+  width: 100%
 }
 @media only screen and (min-width: 400px) and (max-width: 600px){
   #header {
     margin-left: 10%;
     justify-content: center;
     margin-bottom: 0px !important;
-      font-size: 3.5em;
+      font-size: 4em;
   }
   #profile {
-    padding: 0%;
-    width: 70%;
+    width: 60%;
     margin-left: 25%;
     justify-content: right;
     height: 100%;
-  display: flex !important;
-  flex-direction: column !important;
+    display: flex !important;
+    flex-direction: column !important;
   }
   #parallax 
   {
     max-height: 20vh;
   }
 }
-@media only screen and (min-width: 320px) and (max-width: 399px) {
+@media only screen and (min-width:399px) and (max-width: 599px) {
   #header {
-    margin-left: 15%;
-      font-size: 0em;
+  font-size: 4em;
+   align: center;
+   margin-left: 25%;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 399px) {
+  #header {
+    margin-left: 5%;
+    font-size: 4em;
+      justify-content: center;
   }
   #profile {
-    padding: 0%;
-    width: 80%;
-    margin-left: 20%;
+    width: 50%;
+    margin-left: 40%;
     align-content: center;
   }
 

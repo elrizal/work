@@ -2,7 +2,6 @@
     display: flex;
     justify-content: flex-end;
   }
-  
   .h1 {
     margin-top: 10px !important;
     margin-bottom: 20px !important;
@@ -12,19 +11,28 @@
     list-style: none;
   }
   a, .MuiButton-textPrimary-533 {
-    color: #76abc2 !important;
+    color: #6eb6df !important;
     text-decoration: none;
     transition: 0.3s;
   }
-  a:hover{
-    color: #7689aa;
+  .ui.dropdown .menu {
+    padding: 15px !important;
+    border-radius: none;
+    margin: 20px !important;
   }
-  a:visited{
-    color: #76abc2;
+ a:hover{
+    color: #fff;
   }
-.footer {
+ #footer a:visited{
+    color: #6eb6df;
+  }
+#footer {
     /* margin-top: var( — space); */
+    background-color: #434b58;
     display: flex;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     color: #b6d5e5;
+  }
+  .container {
+    padding: 20px !important;
   }

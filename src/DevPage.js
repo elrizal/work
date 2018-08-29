@@ -7,7 +7,6 @@ import Layout from './Layout';
 import { withStyles } from '@material-ui/core/styles';
 import { Container} from 'semantic-ui-react';
 import ScrollAnimation from 'react-animate-on-scroll';
-import SimpleModalWrapped from './components/Modal/Modal';
 import Button from '@material-ui/core/Button';
 
   const styles = theme => ({
@@ -28,16 +27,15 @@ import Button from '@material-ui/core/Button';
     <Layout>
       <div style={{'height':'30px'}}></div>
       <div align='center' className="animated fadeInLeft delay-20s">
-      <h1>Web development</h1>
-      <p>Full stack applications created as passion-projects</p>
+      <h2>Web development</h2>
+      Full stack applications created as passion-projects
       </div>
-      <Container className="animated fadeIn delay-20s">
-      <Row >
+      <Container>
+      <Row>
       <Col xs={12} sm={12}  md={6} lg={4}>
         <img  id='galimg' src={require('./images/preview/lit.jpg')} alt='lit' a href="http://sleepy-peak-84439.herokuapp.com/" target='_blank'/>
           <h2>It's Lit</h2>
-          <p>The app was created with the goal of creating a community of avid book-lovers. Functioning as an online library, 
-        users can contact others in their area that have a book on their wish list. 
+          <p>The app was created with the goal of creating a community of avid literary-lovers to trade and exchange books.
         Saving money and time, users can then continue to build on the people they meet and the books they find.</p>
         <p><strong>Built with:</strong> HTML/CSS3, JQuery, MySQL, Sequelize</p>
           <Button variant="outlined" color="primary" a href="http://sleepy-peak-84439.herokuapp.com/" target='_blank' rel="noopener noreferrer"> Website</Button> <Button variant="outlined" color="primary" a href="https://github.com/elrizal/its-lit" target='_blank' rel="noopener noreferrer">GitHub</Button>
@@ -78,6 +76,29 @@ import Button from '@material-ui/core/Button';
             </p>
           <p><strong>Built with:</strong> HTML/CSS3, Bootstrap</p>
           <Button variant="outlined"  a href="https://elrizal.github.io/Responsive-portfolio/" target='_blank' rel="noopener noreferrer"> Website</Button> <Button variant="outlined" color="primary" a href="https://github.com/elrizal/Responsive-portfolio" target='_blank' rel="noopener noreferrer">GitHub</Button>
+        </Col>
+        <Col  xs={12} sm={12}  md={6} lg={4}>
+        <img id='galimg' src={require('./images/items/eq-landings.jpg')} alt='portfolio template' />
+            <h2>Epson P-series</h2>
+            <p>As a part of driving up sales for Equipment Zone's selling of Epson's P-series printer models, I designed the
+              landing page to serve as an introduction to its products, and create clarity of their uses/features. </p>
+          <p><strong>Built with:</strong> HTML/CSS, LESS, Javascript, PHP</p>
+          <Button variant="outlined"  a href="https://www.equipmentzone.com/epson/pseries/index.php" target='_blank' rel="noopener noreferrer"> Website</Button>  <Button variant="outlined" color="primary" a href={require('./images/items/eq-pseries.gif')} target='_blank' rel="noopener noreferrer">Demo</Button>
+        </Col>
+        <Col  xs={12} sm={12}  md={6} lg={4}>
+        <img id='galimg' src={require('./images/items/eq-landings.jpg')} alt='portfolio template' />
+            <h2>Epson F7200</h2>
+            <p>In a revamp of its landing pages for Epson products, this page served as the basis of the design direction for future products. </p>
+          <p><strong>Built with:</strong> HTML/CSS, LESS, Javascript, PHP</p>
+          <Button variant="outlined"  a href="https://www.equipmentzone.com/epson/f7200/" target='_blank' rel="noopener noreferrer"> Website</Button>  <Button variant="outlined" color="primary" a href={require('./images/items/f72.gif')} target='_blank' rel="noopener noreferrer">Demo</Button>
+        </Col>
+        <Col  xs={12} sm={12}  md={6} lg={4}>
+        <img id='galimg' src={require('./images/items/eq-landings.jpg')} alt='portfolio template' />
+            <h2>DTG Academy Workshop</h2>
+            <p>In order to boost sign-ups and inform customers, Equipment Zone's direct-to-garment workshop, DTG Academy, needed
+              a re-design of its landing page. Using the direction set by the company marketing director, we created this section of the campaign. </p>
+          <p><strong>Built with:</strong> HTML/CSS, LESS, Javascript, PHP</p>
+          <Button variant="outlined"  a href="https://www.equipmentzone.com/dtg-academy/" target='_blank' rel="noopener noreferrer"> Website</Button>  <Button variant="outlined" color="primary" a href={require('./images/items/dtg.gif')} target='_blank' rel="noopener noreferrer">Demo</Button>
         </Col>
         </Row>
       </Container>
