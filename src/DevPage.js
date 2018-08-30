@@ -1,12 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Row, Col } from 'react-bootstrap';
-import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
 import Layout from './Layout';
 import { withStyles } from '@material-ui/core/styles';
 import { Container} from 'semantic-ui-react';
-import ScrollAnimation from 'react-animate-on-scroll';
 import Button from '@material-ui/core/Button';
 
   const styles = theme => ({
@@ -15,14 +12,12 @@ import Button from '@material-ui/core/Button';
       flexWrap: 'wrap',
       justifyContent: 'space-around',
       overflow: 'hidden',
-      backgroundColor: theme.palette.background.paper,
     },
     gridList: {},
     subheader: {
       width: '50%', },
   });
   function DevPage(props) {
-    const { classes } = props;
     return (
     <Layout>
       <div style={{'height':'30px'}}></div>
@@ -32,23 +27,23 @@ import Button from '@material-ui/core/Button';
       </div>
       <Container>
       <Row>
-      <Col xs={12} sm={12}  md={6} lg={4}>
-        <img  id='galimg' src={require('./images/preview/lit.jpg')} alt='lit' a href="http://sleepy-peak-84439.herokuapp.com/" target='_blank'/>
-          <h2>It's Lit</h2>
-          <p>The app was created with the goal of creating a community of avid literary-lovers to trade and exchange books.
+      <Col  xs={12} sm={12}  md={6} lg={4}>
+        <img id='galimg' src={require('./images/preview/lit.jpg')} alt='lit' a href="http://sleepy-peak-84439.herokuapp.com/" target='_blank'/>
+        <h2>It's Lit</h2>
+        <p>The app was created with the goal of creating a community of avid literary-lovers to trade and exchange books.
         Saving money and time, users can then continue to build on the people they meet and the books they find.</p>
         <p><strong>Built with:</strong> HTML/CSS3, JQuery, MySQL, Sequelize</p>
-          <Button variant="outlined" color="primary" a href="http://sleepy-peak-84439.herokuapp.com/" target='_blank' rel="noopener noreferrer"> Website</Button> <Button variant="outlined" color="primary" a href="https://github.com/elrizal/its-lit" target='_blank' rel="noopener noreferrer">GitHub</Button>
+        <Button variant="outlined" color="primary" a href="http://sleepy-peak-84439.herokuapp.com/" target='_blank' rel="noopener noreferrer"> Website</Button> <Button variant="outlined" color="primary" a href="https://github.com/elrizal/its-lit" target='_blank' rel="noopener noreferrer">GitHub</Button>
         </Col>
         <Col xs={12} sm={12}  md={6} lg={4}>
         <img id='galimg' src={require('./images/preview/cwn.jpg')} alt='cook with nana'/>
-            <h2>Cook With Nana</h2>
-            <p>Want to learn to cook? This app was created for connecting the culinary-challenged to senior citizens looking to teach cooking with
-              that "home-made feel". Once signing up, users of all ages can seek advice/meet-ups with grandmas or for grandmas seeking to share their
-              wisdom.
-            </p>
-          <p><strong>Built with:</strong> MySQL, Sequelize, Axios, Passport, React and style plugins</p>
-          <Button variant="outlined" color="primary" a href="https://peaceful-woodland-77310.herokuapp.com/" target='_blank' rel="noopener noreferrer"> Website</Button> <Button variant="outlined" color="primary" a href="https://github.com/elrizal/CookWithNana" target='_blank' rel="noopener noreferrer">GitHub</Button>
+        <h2>Cook With Nana</h2>
+        <p>Want to learn to cook? This app was created for connecting the culinary-challenged to senior citizens looking to teach cooking with
+        that "home-made feel". Once signing up, users of all ages can seek advice/meet-ups with grandmas or for grandmas seeking to share their
+        wisdom.
+        </p>
+        <p><strong>Built with:</strong> MySQL, Sequelize, Axios, Passport, React and style plugins</p>
+        <Button variant="outlined" color="primary" a href="https://peaceful-woodland-77310.herokuapp.com/" target='_blank' rel="noopener noreferrer"> Website</Button> <Button variant="outlined" color="primary" a href="https://github.com/elrizal/CookWithNana" target='_blank' rel="noopener noreferrer">GitHub</Button>
         </Col>
         <Col  xs={12} sm={12}  md={6} lg={4}>
          <img id='galimg' src={require('./images/preview/movr.jpg')} alt='movr' />

@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Container, Divider } from 'semantic-ui-react';
-import { pullRight, h1 } from './css/Layout.css';
+import { Container} from 'semantic-ui-react';
+import { pullRight } from './css/Layout.css';
 import { Row, Col} from 'react-bootstrap';
 import './css/Layout.css';
 

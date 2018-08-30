@@ -1,5 +1,5 @@
 import React from 'react';
-import { Parallax, Background } from 'react-parallax';
+import { Parallax } from 'react-parallax';
 import './header.css';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
@@ -20,13 +20,13 @@ const styles = theme => ({
   },
 });
 function Header(props) {
-  const { classes } = props;
   return (
   <div >
     <Parallax
      id='parallax'
      className='headermarble animated fadeIn'
       bgImage={require('../../images/6.jpg')}
+      alt='header'
       strength={100}>
     <Row>
     <Col  xs={4}  sm={4} md={6} lg={6} >
@@ -37,7 +37,7 @@ function Header(props) {
         </div>
       </Col>
       <Col  xs={8} sm={8}  md={6} lg={6} ><div>
-      <img id='profile' className="animated fadeIn" src={require('../../images/mer.png')} />
+      <img id='profile' className="animated fadeIn" src={require('../../images/mer.png')} alt='Erin'/>
       </div>
       </Col>
     </Row>
@@ -48,5 +48,4 @@ function Header(props) {
 Header.propTypes = {
   classes: PropTypes.object.isRequired,
 };
-
 export default withStyles(styles)(Header);

@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import {Row, Col} from 'react-bootstrap';
 import './css/grid.css';
 import './css/zoom.css';
@@ -7,7 +6,6 @@ import Header from './components/Header/Header';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { Parallax } from 'react-parallax';
 import { Container } from 'semantic-ui-react';
-import Button from '@material-ui/core/Button';
 import { pullRight, h1 } from './css/Layout.css';
 
 const Home = () => {
@@ -65,27 +63,26 @@ const Home = () => {
        <div id='block' style={{'height':'5vh'}}></div>  
        
         <h1>Work:</h1>
-        
         </Container>
         </Row>
         <ScrollAnimation animateIn="fadeIn">
         <div align='center' id='introgridc'>
         <a className='introgrid' href="/uxui">
-        <img className='introgrid' src={require('./images/items/ux.jpg')} /> </a>
+        <img className='introgrid' src={require('./images/items/ux.jpg')} alt='ux design'/> </a>
         <a className='introgrid' href="/branddesign">
-        <img className='introgrid' src={require('./images/items/branding.jpg')} /> </a>
+        <img className='introgrid' src={require('./images/items/branding.jpg')} alt='brand design'/> </a>
         <a className='introgrid' href="/dev">
-        <img className='introgrid' src={require('./images/items/web.jpg')} /></a>
+        <img className='introgrid' src={require('./images/items/web.jpg')} alt='web development'/></a>
         <a className='introgrid' href="/sm">
-        <img className='introgrid' src={require('./images/items/social.jpg')} /> </a>
+        <img className='introgrid' src={require('./images/items/social.jpg')} alt='social media'/> </a>
         <a className='introgrid' href="/illustration">
-        <img className='introgrid' src={require('./images/items/illustration.jpg')} /> </a>
+        <img className='introgrid' src={require('./images/items/illustration.jpg')} alt='illustrations' /> </a>
         <a className='introgrid' href="/posters">
-        <img className='introgrid' src={require('./images/items/posters.jpg')} /> </a>
+        <img className='introgrid' src={require('./images/items/posters.jpg')} alt='posters' /> </a>
         <a className='introgrid' href="/broadcast">
-        <img className='introgrid' src={require('./images/items/tv.jpg')} /> </a>
+        <img className='introgrid' src={require('./images/items/tv.jpg')} alt='broadcast'/> </a>
         <a className='introgrid' href="/print">
-        <img className='introgrid' src={require('./images/items/print.jpg')} /> </a>
+        <img className='introgrid' src={require('./images/items/print.jpg')} alt='print campaigns'/> </a>
 
         </div>  
         </ScrollAnimation>

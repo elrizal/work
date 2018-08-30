@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Switch, BrowserRouter as Router, Route } from 'react-router-dom';
 import './css/App.css';
 import './css/index.css';
-import MenuExampleBasic from './components/Navigation/Navigation';
 import Home from './Home';
 import DynamicPage from './DynamicPage';
 import DevPage from './DevPage';
@@ -11,14 +10,10 @@ import WFCase from './WFCase';
 import Print from './Print';
 import SocialMedia from './SocialMedia';
 import BrandDesign from './BrandDesign';
-import Posters from './Posters';
-import Illust from './Illust';
-import Broadcast from './Broadcast';
 import NoMatch from './NoMatch';
 import Loading from './components/Loading';
 import importedComponent from 'react-imported-component';
 import Navigation from './components/Navigation/Navigation';
-import ScrollAnimation from 'react-animate-on-scroll';
 
 const AsyncDynamicPage = importedComponent(
   () => import(/* webpackChunkName:'DynamicPage' */ './DynamicPage'),('./DevPage'),('./UXpage'),

@@ -1,7 +1,5 @@
 import React from 'react';
-import { Icon, Header } from 'semantic-ui-react';
 import { Container} from 'semantic-ui-react';
-
 import Layout from './Layout';
 
 const NoMatch = () => {

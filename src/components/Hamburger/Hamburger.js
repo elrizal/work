@@ -1,7 +1,6 @@
 import React from "react";
-import {slide as Menu, right} from 'react-burger-menu'
+import {slide as Menu} from 'react-burger-menu'
 import './Hamburger.css'
-import {Link} from 'react-router-dom';
 
 const Hamburger = props => {
     return (

@@ -4,10 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import { Container} from 'semantic-ui-react';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
 import {Link} from 'react-router-dom';
-import { Dropdown } from 'semantic-ui-react'
 import '../../css/index.css';
 import Hamburger from '../Hamburger/Hamburger';
 
@@ -31,7 +28,7 @@ function ButtonAppBar(props) {
       <Hamburger />
         <Toolbar>
           <div align='left'><Link to="/"> 
-          <img id='logo' src={require('../../images/logo.png')} /></Link> 
+          <img id='logo' src={require('../../images/logo.png')} alt='lrizal'/></Link> 
           </div>
           <Container align='right'>
           <div className='work-items'>

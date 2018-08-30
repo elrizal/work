@@ -1,8 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Layout from './Layout';
-import { Row, Col } from 'react-bootstrap';
-import {Paper, Button, Grid} from '@material-ui/core/';
 import { Container} from 'semantic-ui-react';
 import Gallery from 'react-photo-gallery';
 import Lightbox from 'react-images';
@@ -70,7 +67,6 @@ class PosterGallery extends React.Component {
     )
   }
 }
-const  classes  = this.props;
 const Posters = () => {
   return (
     <Layout>

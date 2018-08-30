@@ -1,20 +1,18 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Layout from './Layout';
 import { Row, Col } from 'react-bootstrap';
 import { Button} from '@material-ui/core/';
 import { Container} from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
-import { withStyles } from '@material-ui/core/styles';
 import Gallery from 'react-photo-gallery';
 import Lightbox from 'react-images';
-import { Parallax, Background} from 'react-parallax';
+import { Parallax} from 'react-parallax';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 const photos = [
-  { src: require('./images/uxui/brand-wherefor1.jpg'), width: 0.8, height: 1},
-  { src: require('./images/uxui/brand-wherefor2.jpg'),width: 0.8, height: 1},
-  { src: require('./images/uxui/brand-wherefor3.jpg'),width: 0.8, height: 1},
+  { src: require('./images/uxui/brand-wherefor1.jpg'), width: 0.8, height: 1, alt:'brand guide'},
+  { src: require('./images/uxui/brand-wherefor2.jpg'),width: 0.8, height: 1, alt:'brand guide'},
+  { src: require('./images/uxui/brand-wherefor3.jpg'),width: 0.8, height: 1,  alt:'brand guide'},
 ];
 class WfGallery extends React.Component {
   constructor() {
@@ -62,14 +60,13 @@ class WfGallery extends React.Component {
     )
   }
 }
-const  classes  = this.props;
 const WFCase = (props) => {
   return (
         <div>
         <Parallax bgImage={require('./images/wf-bannerbg.jpg')}
          strength={20}>
         <div className='para-items' align='center' style={{height: '100vh'}}> 
-        <img id='wf'className="animated fadeIn" src={require('./images/wf-main.png')} />
+        <img id='wf'className="animated fadeIn" src={require('./images/wf-main.png')} alt='Wherefor Redesign'/>
         </div>
         </Parallax>
         <Layout>
@@ -88,6 +85,7 @@ const WFCase = (props) => {
       </div>
       </Container>
       <Parallax bgImage={require('./images/uxui/lakebg.jpg')}
+         alt='lakebg'
          strength={500}>
          <Container>
       <ScrollAnimation animateIn="fadeInRight">
@@ -121,11 +119,11 @@ const WFCase = (props) => {
         </ScrollAnimation>
         </Container>
         <ScrollAnimation animateIn="slideInUp">
-        <img id='lake' style={{'maxHeight':'30%'}} src={require('./images/uxui/mountains/lakebg.png')} />
+        <img id='lake' style={{'maxHeight':'30%'}} alt='lakebg' src={require('./images/uxui/mountains/lakebg.png')} />
         </ScrollAnimation>
         </Parallax>
     
-      <Parallax bgImage={require('./images/uxui/mountains/citybg.jpg')} strength={100}>
+      <Parallax bgImage={require('./images/uxui/mountains/citybg.jpg')} strength={100} alt='mountains'>
          <Container>
       <ScrollAnimation animateIn="fadeInLeft">
       <h1 align='center'>Refine & Tune:</h1>
@@ -156,9 +154,9 @@ const WFCase = (props) => {
         </Row>    
         </ScrollAnimation>
         </Container>
-        <img id='lake' className="img2 animated slideInUp" src={require('./images/uxui/mountains/mountain-mid.png')} /> 
+        <img id='lake' alt='mid' className="img2 animated slideInUp" src={require('./images/uxui/mountains/mountain-mid.png')} /> 
         <ScrollAnimation animateIn="slideInUp">    
-        <img id='lake' className='img1' src={require('./images/uxui/mountains/city-line.png')} />
+        <img id='lake' alt='mid' className='img1' src={require('./images/uxui/mountains/city-line.png')} />
         </ScrollAnimation>  
         </Parallax>
         <div id='section2'>
