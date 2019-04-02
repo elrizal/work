@@ -13,7 +13,16 @@ import NoMatch from './NoMatch';
 import Loading from './components/Loading';
 import importedComponent from 'react-imported-component';
 import Navigation from './components/Navigation/Navigation';
-
+const postcssPresetEnv = require("postcss-preset-env")({
+  browsers: ["last 1 versions", "not ie <= 11", "not op_mini all", "not dead", "not < 0.5%"],
+  stage: 1,
+  autoprefixer: {
+    grid: true
+  },
+  insertBefore: {
+    "nesting-rules": postcssMixins
+  }
+});
 const AsyncDynamicPage = importedComponent(
   () => import(/* webpackChunkName:'DynamicPage' */ './DynamicPage'),('./DevPage'),('./UXpage'),
   ('./BrandDesign'),('./WFCase'), ('./SocialMedia'),('./Print'),('./Posters'),('./Illust'),('./Broadcast'),
