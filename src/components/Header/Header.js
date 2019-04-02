@@ -25,19 +25,19 @@ function Header(props) {
     <Parallax
      id='parallax'
      className='headermarble animated fadeIn'
-      bgImage={require('../../images/6.jpg')}
+      bgImage={'https://res.cloudinary.com/diuubtvqd/image/upload/v1554224388/6.jpg'}
       alt='header'
       strength={100}>
     <Row>
     <Col  xs={4}  sm={4} md={6} lg={6} >
-      <div align="left" >
+      <div align="left">
       <div id="header" >ERIN<br></br>
       LEIGH<br></br>
       RIZAL</div>
         </div>
       </Col>
-      <Col  xs={8} sm={8}  md={6} lg={6} ><div>
-      <img id='profile' className="animated fadeIn" src={require('../../images/mer.png')} alt='Erin'/>
+      <Col  xs={8} sm={8}  md={6} lg={6}><div>
+      <img id='profile' className="animated fadeIn" src={'https://res.cloudinary.com/diuubtvqd/image/upload/v1554223669/mer.png'} alt='Erin'/>
       </div>
       </Col>
     </Row>

@@ -78,14 +78,14 @@ import Button from '@material-ui/core/Button';
             <p>As a part of driving up sales for Equipment Zone's selling of Epson's P-series printer models, I designed the
               landing page to serve as an introduction to its products, and create clarity of their uses/features. </p>
           <p><strong>Built with:</strong> HTML/CSS, LESS, Javascript, PHP</p>
-          <Button variant="outlined"  a href="https://www.equipmentzone.com/epson/pseries/index.php" target='_blank' rel="noopener noreferrer"> Website</Button>  <Button variant="outlined" color="primary" a href={require('./images/items/eq-pseries.gif')} target='_blank' rel="noopener noreferrer">Demo</Button>
+          <Button variant="outlined"  a href="https://www.equipmentzone.com/epson/pseries/index.php" target='_blank' rel="noopener noreferrer"> Website</Button>  <Button variant="outlined" color="primary" a href={'https://res.cloudinary.com/diuubtvqd/image/upload/v1554174606/eq-pseries.gif'} target='_blank' rel="noopener noreferrer">Demo</Button>
         </Col>
         <Col  xs={12} sm={12}  md={6} lg={4}>
         <img id='galimg' src={require('./images/items/eq-landings.jpg')} alt='portfolio template' />
             <h2>Epson F7200</h2>
             <p>In a revamp of its landing pages for Epson products, this page served as the basis of the design direction for future products. </p>
           <p><strong>Built with:</strong> HTML/CSS, LESS, Javascript, PHP</p>
-          <Button variant="outlined"  a href="https://www.equipmentzone.com/epson/f7200/" target='_blank' rel="noopener noreferrer"> Website</Button>  <Button variant="outlined" color="primary" a href={require('./images/items/f72.gif')} target='_blank' rel="noopener noreferrer">Demo</Button>
+          <Button variant="outlined"  a href="https://www.equipmentzone.com/epson/f7200/" target='_blank' rel="noopener noreferrer"> Website</Button>  <Button variant="outlined" color="primary" a href={'https://res.cloudinary.com/diuubtvqd/image/upload/v1554174606/f72.gif'} target='_blank' rel="noopener noreferrer">Demo</Button>
         </Col>
         <Col  xs={12} sm={12}  md={6} lg={4}>
         <img id='galimg' src={require('./images/items/eq-landings.jpg')} alt='portfolio template' />
@@ -93,7 +93,7 @@ import Button from '@material-ui/core/Button';
             <p>In order to boost sign-ups and inform customers, Equipment Zone's direct-to-garment workshop, DTG Academy, needed
               a re-design of its landing page. Using the direction set by the company marketing director, we created this section of the campaign. </p>
           <p><strong>Built with:</strong> HTML/CSS, LESS, Javascript, PHP</p>
-          <Button variant="outlined"  a href="https://www.equipmentzone.com/dtg-academy/" target='_blank' rel="noopener noreferrer"> Website</Button>  <Button variant="outlined" color="primary" a href={require('./images/items/dtg.gif')} target='_blank' rel="noopener noreferrer">Demo</Button>
+          <Button variant="outlined"  a href="https://www.equipmentzone.com/dtg-academy/" target='_blank' rel="noopener noreferrer"> Website</Button>  <Button variant="outlined" color="primary" a href={'https://res.cloudinary.com/diuubtvqd/image/upload/v1554174609/dtg.gif'} target='_blank' rel="noopener noreferrer">Demo</Button>
         </Col>
         </Row>
       </Container>

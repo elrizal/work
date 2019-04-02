@@ -15,17 +15,18 @@ const Home = () => {
         <Parallax
         className='animated FadeIn'
         id='parallax'
-        bgImage={require('./images/wmarble.png')}
+        bgImage={'https://res.cloudinary.com/diuubtvqd/image/upload/v1554223932/wmarble.jpg'}
         strength={100}
         height={'auto'}>
         <Row id='section1'>
         <Container>
+        <ScrollAnimation animateIn="fadeInUp">
         <h1>Hello!</h1><p>
         Thanks for checking this out. I'm a US-based full stack developer who has training in back end development
         paired with 3 years of work in front end development and visual design. I'm always more than
         eager to reach out to my skills in UX design and research, since I follow a passion for creating
         a full user experience. So here's what I use:</p>
-        <ScrollAnimation animateIn="fadeInUp">
+       
         <Row>
         <Col xs={12} sm={12}  md={4} lg={4} >
         <h2><i  id='icons' className='fas fa-code fa-sm'></i>Development</h2>
@@ -43,26 +44,26 @@ const Home = () => {
         Specialties: Brand identity, wireframing, illustration</p>
         </Col>
         </Row>
-        </ScrollAnimation>
+    
         <br></br>
-        <ScrollAnimation animateIn="fadeInUp">
+    
         <div>
         <h2>where I learned them:</h2> 
         <p><strong>Loyola University Maryland</strong> - <i>2011 to 2015</i> <br></br>
-        B.A. in Digital Media and Psychology / 3 years of internships in web and graphic design</p>
+        B.A. in Digital Media (with a Front-End Web Development and Design focus) and Psychology; 3 years of internships in web and graphic
+         design</p>
       
-       <p><strong>Springboard UX Design</strong> - <i>2016 to 2017</i> <br></br>
+       <p><strong>Springboard's UI/UX Design Course</strong> - <i>2016 to 2017</i> <br></br>
          Completed a full online course in the research, design strategies and practical applications behind creating strong user experiences
-         </p> <p>
+         </p> 
+         <p>
          <strong>Rutgers University Full Stack Development Course</strong> - <i>2017 to 2018</i> <br></br>
         Earned a certificate in front end and back end development</p>
         </div>
         </ScrollAnimation>
        <div align='right'>
        </div>
-       <div id='block' style={{'height':'5vh'}}></div>  
-       
-        <h1>Work:</h1>
+        <h2>Showcase:</h2>
         </Container>
         </Row>
         <ScrollAnimation animateIn="fadeIn">
@@ -86,21 +87,26 @@ const Home = () => {
 
         </div>  
         </ScrollAnimation>
+        <div className={pullRight}  align='center'>
+        <Container>
+        <Row>    
+        <Col  xs={12} sm={6}  md={6} lg={6}>
+          © Erin Rizal 2019
+        </Col>
+        <Col  xs={12} sm={6}  md={6} lg={6}>
+        <a href='mailto:erin@lrizal.com'><i id='icons' className='fas fa-envelope fa-md'></i> Email </a> 
+        <a href='https://www.linkedin.com/in/erin-leigh-rizal-3ab50767/' target='_blank' rel="noopener noreferrer"> 
+         <i id='icons' className='fab fa-linkedin fa-md'></i> LinkedIn</a>    
+         <a href='https://www.twitter.com/erinazal' target='_blank' rel="noopener noreferrer" > 
+        <i id='icons' className='fab fa-twitter  fa-md'></i> Twitter</a>
+        <a href='https://www.github.com/elrizal' target='_blank' rel="noopener noreferrer" > 
+        <i id='icons' className='fab fa-github  fa-md'></i> Github</a>
+        </Col>
+        </Row>    
+        </ Container> 
+        </div>
         </Parallax>
-        <div className={pullRight} id='footer' align='center'>
-      <Container>
-      <Row>    
-      <Col  xs={12} sm={6}  md={6} lg={6}>
-     © Erin Rizal 2018 
-      </Col>
-      <Col  xs={12} sm={6}  md={6} lg={6}>
-      <a href='mailto:erin@lrizal.com'><i id='icons' className='fas fa-envelope fa-md'></i> Email </a> 
-      <a href='https://www.linkedin.com/in/erin-leigh-rizal-3ab50767/' target='_blank' rel="noopener noreferrer">  <i id='icons' className='fab fa-linkedin fa-md'></i> LinkedIn</a>    
-      <a href='https://www.github.com/elrizal' target='_blank' rel="noopener noreferrer" > <i id='icons' className='fab fa-github  fa-md'></i> Github</a>
-      </Col>
-      </Row>    
-      </ Container> 
-      </div>
+
 
         </div>
     );

@@ -8,10 +8,47 @@ body {
   font-size: 1em !important;
   font-style: normal;
 }
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+bgImage {
+  width: 20%;
+}
+
 .introgrid {
   max-width: 25vw;
   max-height: auto;
   display: inline-block;
+
+}
+.introgrid:hover {
+  box-shadow: 1px 1px 3px 0px #292d4146;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 #introgridc {
   line-height: 0px !important;

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Switch, BrowserRouter as Router, Route } from 'react-router-dom';
-import './css/App.css';
 import './css/index.css';
 import Home from './Home';
 import DynamicPage from './DynamicPage';
@@ -87,7 +86,6 @@ const App = () => {
   return (
     <Router>
       <div>
-        <div id='block' style={{'height':'50px'}}></div>
       <Navigation />
         <Switch>
           <Route exact path="/" component={Home} />
